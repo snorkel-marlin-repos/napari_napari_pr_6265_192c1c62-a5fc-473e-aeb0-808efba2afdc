@@ -121,7 +121,7 @@ jobs:
           PIP_CONSTRAINT: resources/constraints/constraints_py${{ matrix.python }}${{ matrix.MIN_REQ && '_min_req' }}.txt
 
       - name: Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
 
       - name: Report Failures
         if: ${{ failure() }}
